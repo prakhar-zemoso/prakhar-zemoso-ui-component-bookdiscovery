@@ -331,7 +331,7 @@ export default function Button(props) {
     border: "1px SOLID rgba(174,179,183,1)",
     borderRadius: "5px",
     padding: "8px 16px 8px 16px",
-    onClick: ""
+    onClick: "g"
   }, rest, getOverrideProps(overrides, "Button")), /*#__PURE__*/React.createElement(Text, _extends({
     fontFamily: "Inter",
     fontSize: "16px",
