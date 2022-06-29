@@ -11,10 +11,10 @@ import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Text, View } from "@aws-amplify/ui-react";
 import Moleculesbuttonprimarymoleculesheadernavwoiconmoleculesheadernavwicon from "./Moleculesbuttonprimarymoleculesheadernavwoiconmoleculesheadernavwicon";
-import Moleculessearchnew1 from "./Moleculessearchnew1";
 import Atomsiconsnotification from "./Atomsiconsnotification";
 import Atomsavatar from "./Atomsavatar";
 import Atomslogonew from "./Atomslogonew";
+import Moleculessearchnew1 from "./Moleculessearchnew1";
 export default function OrganismsheaderNew(props) {
   const {
     overrides,
@@ -80,21 +80,7 @@ export default function OrganismsheaderNew(props) {
     position: "relative",
     borderRadius: "4px",
     padding: "4px 4px 4px 8px"
-  }, getOverrideProps(overrides, "molecules/button/primary/molecules/headernav/wo icon/molecules/headernav/w icon8242837")))), /*#__PURE__*/React.createElement(Moleculessearchnew1, _extends({
-    display: "flex",
-    gap: "4px",
-    position: "absolute",
-    top: "15px",
-    left: "607px",
-    right: "246px",
-    direction: "row",
-    width: "513px",
-    alignItems: "center",
-    border: "1px SOLID rgba(227,227,227,1)",
-    borderRadius: "8px",
-    padding: "3px 15px 3px 15px",
-    backgroundColor: "rgba(255,255,255,1)"
-  }, getOverrideProps(overrides, "molecules/searchnew1"))), /*#__PURE__*/React.createElement(Flex, _extends({
+  }, getOverrideProps(overrides, "molecules/button/primary/molecules/headernav/wo icon/molecules/headernav/w icon8242837")))), /*#__PURE__*/React.createElement(Flex, _extends({
     gap: "24px",
     position: "absolute",
     top: "14px",
@@ -129,5 +115,20 @@ export default function OrganismsheaderNew(props) {
     justifyContent: "center",
     alignItems: "center",
     padding: "0px 0px 0px 0px"
-  }, getOverrideProps(overrides, "atoms/logonew"))));
+  }, getOverrideProps(overrides, "atoms/logonew"))), /*#__PURE__*/React.createElement(Moleculessearchnew1, _extends({
+    display: "flex",
+    gap: "4px",
+    position: "absolute",
+    top: "15px",
+    left: "607px",
+    right: "246px",
+    direction: "row",
+    width: "513px",
+    height: "38px",
+    alignItems: "center",
+    border: "1px SOLID rgba(227,227,227,1)",
+    borderRadius: "8px",
+    padding: "3px 15px 3px 15px",
+    backgroundColor: "rgba(255,255,255,1)"
+  }, getOverrideProps(overrides, "molecules/searchnew1"))));
 }

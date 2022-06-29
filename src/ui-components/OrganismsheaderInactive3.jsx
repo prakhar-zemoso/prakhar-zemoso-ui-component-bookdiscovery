@@ -93,6 +93,7 @@ export default function OrganismsheaderInactive3(props) {
         left="607px"
         direction="row"
         width="513px"
+        height="38px"
         alignItems="center"
         border="1px SOLID rgba(227,227,227,1)"
         borderRadius="8px"

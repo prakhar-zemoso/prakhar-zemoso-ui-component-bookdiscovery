@@ -9,10 +9,10 @@ import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Text, View } from "@aws-amplify/ui-react";
 import Moleculesbuttonprimarymoleculesheadernavwoiconmoleculesheadernavwicon from "./Moleculesbuttonprimarymoleculesheadernavwoiconmoleculesheadernavwicon";
-import Moleculessearchnew1 from "./Moleculessearchnew1";
 import Atomsiconsnotification from "./Atomsiconsnotification";
 import Atomsavatar from "./Atomsavatar";
 import Atomslogonew from "./Atomslogonew";
+import Moleculessearchnew1 from "./Moleculessearchnew1";
 export default function OrganismsheaderNew(props) {
   const { overrides, ...rest } = props;
   return (
@@ -97,22 +97,6 @@ export default function OrganismsheaderNew(props) {
           )}
         ></Moleculesbuttonprimarymoleculesheadernavwoiconmoleculesheadernavwicon>
       </Flex>
-      <Moleculessearchnew1
-        display="flex"
-        gap="4px"
-        position="absolute"
-        top="15px"
-        left="607px"
-        right="246px"
-        direction="row"
-        width="513px"
-        alignItems="center"
-        border="1px SOLID rgba(227,227,227,1)"
-        borderRadius="8px"
-        padding="3px 15px 3px 15px"
-        backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "molecules/searchnew1")}
-      ></Moleculessearchnew1>
       <Flex
         gap="24px"
         position="absolute"
@@ -157,6 +141,23 @@ export default function OrganismsheaderNew(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "atoms/logonew")}
       ></Atomslogonew>
+      <Moleculessearchnew1
+        display="flex"
+        gap="4px"
+        position="absolute"
+        top="15px"
+        left="607px"
+        right="246px"
+        direction="row"
+        width="513px"
+        height="38px"
+        alignItems="center"
+        border="1px SOLID rgba(227,227,227,1)"
+        borderRadius="8px"
+        padding="3px 15px 3px 15px"
+        backgroundColor="rgba(255,255,255,1)"
+        {...getOverrideProps(overrides, "molecules/searchnew1")}
+      ></Moleculessearchnew1>
     </View>
   );
 }

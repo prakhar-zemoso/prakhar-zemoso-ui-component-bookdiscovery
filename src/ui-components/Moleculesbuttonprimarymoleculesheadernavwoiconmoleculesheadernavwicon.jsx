@@ -19,6 +19,7 @@ export default function Moleculesbuttonprimarymoleculesheadernavwoiconmoleculesh
       direction="row"
       alignItems="center"
       position="relative"
+      borderRadius="4px 4px 4px 4px"
       padding="4px 4px 4px 4px"
       {...rest}
       {...getOverrideProps(

@@ -20,38 +20,21 @@ export default function Moleculessearchnew1(props) {
     gap: "4px",
     direction: "row",
     width: "513px",
+    height: "38px",
     alignItems: "center",
     position: "relative",
     border: "1px SOLID rgba(227,227,227,1)",
     borderRadius: "8px",
     padding: "3px 15px 3px 15px",
     backgroundColor: "rgba(255,255,255,1)"
-  }, rest, getOverrideProps(overrides, "Moleculessearchnew1")), /*#__PURE__*/React.createElement(Flex, _extends({
-    gap: "4px",
-    direction: "row",
-    width: "fit-content",
-    alignItems: "center",
-    shrink: "0",
-    height: "30px",
-    position: "relative",
-    padding: "0px 0px 0px 0px"
-  }, getOverrideProps(overrides, "Frame 27")), /*#__PURE__*/React.createElement(Atomsiconssearchnew1, _extends({
+  }, rest, getOverrideProps(overrides, "Moleculessearchnew1")), /*#__PURE__*/React.createElement(Atomsiconssearchnew1, _extends({
     width: "24px",
     height: "24px",
     shrink: "0",
     overflow: "hidden",
     position: "relative",
     padding: "0px 0px 0px 0px"
-  }, getOverrideProps(overrides, "atoms/icons/searchnew1"))), /*#__PURE__*/React.createElement(Flex, _extends({
-    gap: "10px",
-    direction: "row",
-    width: "fit-content",
-    alignItems: "center",
-    shrink: "0",
-    height: "30px",
-    position: "relative",
-    padding: "4px 4px 4px 4px"
-  }, getOverrideProps(overrides, "Frame 14")), /*#__PURE__*/React.createElement(Text, _extends({
+  }, getOverrideProps(overrides, "atoms/icons/searchnew1"))), /*#__PURE__*/React.createElement(Text, _extends({
     fontFamily: "Roboto",
     fontSize: "14px",
     fontWeight: "400",
@@ -60,11 +43,15 @@ export default function Moleculessearchnew1(props) {
     textAlign: "left",
     display: "flex",
     direction: "column",
-    justifyContent: "flex-start",
-    shrink: "0",
+    justifyContent: "center",
+    width: "453px",
+    height: "30px",
+    grow: "1",
+    basis: "453px",
+    alignSelf: "stretch",
     position: "relative",
     padding: "0px 0px 0px 0px",
     whiteSpace: "pre-wrap",
     children: "Search here by book title, author or ISBN"
-  }, getOverrideProps(overrides, "Search here by book title, author or ISBN"))))));
+  }, getOverrideProps(overrides, "Search here by book title, author or ISBN"))));
 }

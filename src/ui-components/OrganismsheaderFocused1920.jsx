@@ -14,7 +14,7 @@ import Moleculessearchnew1closeicon from "./Moleculessearchnew1closeicon";
 import Atomsiconsnotification from "./Atomsiconsnotification";
 import Atomsavatar from "./Atomsavatar";
 export default function OrganismsheaderFocused1920(props) {
-  const { overrides, ...rest } = props;
+  const { abc, overrides, ...rest } = props;
   return (
     <View
       width="1920px"

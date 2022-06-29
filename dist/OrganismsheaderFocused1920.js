@@ -17,6 +17,7 @@ import Atomsiconsnotification from "./Atomsiconsnotification";
 import Atomsavatar from "./Atomsavatar";
 export default function OrganismsheaderFocused1920(props) {
   const {
+    abc,
     overrides,
     ...rest
   } = props;

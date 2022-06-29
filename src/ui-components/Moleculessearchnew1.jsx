@@ -16,6 +16,7 @@ export default function Moleculessearchnew1(props) {
       gap="4px"
       direction="row"
       width="513px"
+      height="38px"
       alignItems="center"
       position="relative"
       border="1px SOLID rgba(227,227,227,1)"
@@ -25,59 +26,39 @@ export default function Moleculessearchnew1(props) {
       {...rest}
       {...getOverrideProps(overrides, "Moleculessearchnew1")}
     >
-      <Flex
-        gap="4px"
-        direction="row"
-        width="fit-content"
-        alignItems="center"
+      <Atomsiconssearchnew1
+        width="24px"
+        height="24px"
         shrink="0"
-        height="30px"
+        overflow="hidden"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 27")}
-      >
-        <Atomsiconssearchnew1
-          width="24px"
-          height="24px"
-          shrink="0"
-          overflow="hidden"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "atoms/icons/searchnew1")}
-        ></Atomsiconssearchnew1>
-        <Flex
-          gap="10px"
-          direction="row"
-          width="fit-content"
-          alignItems="center"
-          shrink="0"
-          height="30px"
-          position="relative"
-          padding="4px 4px 4px 4px"
-          {...getOverrideProps(overrides, "Frame 14")}
-        >
-          <Text
-            fontFamily="Roboto"
-            fontSize="14px"
-            fontWeight="400"
-            color="rgba(96,96,96,1)"
-            lineHeight="22px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Search here by book title, author or ISBN"
-            {...getOverrideProps(
-              overrides,
-              "Search here by book title, author or ISBN"
-            )}
-          ></Text>
-        </Flex>
-      </Flex>
+        {...getOverrideProps(overrides, "atoms/icons/searchnew1")}
+      ></Atomsiconssearchnew1>
+      <Text
+        fontFamily="Roboto"
+        fontSize="14px"
+        fontWeight="400"
+        color="rgba(96,96,96,1)"
+        lineHeight="22px"
+        textAlign="left"
+        display="flex"
+        direction="column"
+        justifyContent="center"
+        width="453px"
+        height="30px"
+        grow="1"
+        basis="453px"
+        alignSelf="stretch"
+        position="relative"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Search here by book title, author or ISBN"
+        {...getOverrideProps(
+          overrides,
+          "Search here by book title, author or ISBN"
+        )}
+      ></Text>
     </Flex>
   );
 }
