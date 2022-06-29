@@ -9,12 +9,14 @@ import Organismscardbooksreading from "../../bookdiscovery/src/ui-components/Org
 import Bannernew from "../../bookdiscovery/src/ui-components/Bannernew.jsx";
 import Organismscardrecommendations  from "../../bookdiscovery/src/ui-components/Organismscardrecommendations.jsx";
 import Organismscardtopics from "../../bookdiscovery/src/ui-components/Organismscardtopics.jsx";
-import Organismsalltopics from "../../bookdiscovery/src/ui-components/Organismsalltopics.jsx";
+import Organismsalltopics from "./ui-components/Organismsalltopicsv1.jsx";
 import CardCollection from "../../bookdiscovery/src/ui-components/CardCollection.jsx";
 import Header from "../../bookdiscovery/src/ui-components/Header.jsx"
 import OrganismsheaderFocused192 from "../../bookdiscovery/src/ui-components/OrganismsheaderFocused192";
-
+import Moleculeslist1 from "../../bookdiscovery/src/ui-components/Moleculeslist1";
+import Atomsiconsmaths from "../../bookdiscovery/src/ui-components/Atomsiconsmaths"
 import { a } from 'aws-amplify';
+import { bgcolor } from '@mui/system';
 
 const BodyContainer = styled("div")({
   marginTop: 56,
@@ -77,17 +79,18 @@ function App() {
         <Header
           overrides={{ "Button11423814": { onClick: () => { explore ? setExplore(false) : setExplore(true); } } }}
         />
-        </HeaderContainer>
+        
 
-        {explore ? <Organismsalltopics /> : null}
+        {explore ? <Organismsalltopics 
+        overrides={{ "molecules/list11464298": {bgcolor:"#f5b942"}}}
+        /> : null}
 
         <BodyContainer>
-          <OrganismsheaderFocused192 />
-          <Bannernew  overrides={{"Button":{Children:"Book Discovery"}}}/>
+          <Bannernew  overrides={{"Button":{Children:"Book Discovery",}}}/>
         </BodyContainer>
 
         <CardBody>
-          <Organismscardreport />
+          <Organismscardreport overrides={{"Organismscardreport": {onclick:()=>{"Hello Worl"}}}} />
           <Organismscardreport />
           <Organismscardreport />
           <Organismscardreport />
@@ -129,10 +132,18 @@ function App() {
             </Typography>
           </BooksCurrentlyReadingText>
           <BooksCurrentlyReadingSection>
+          <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardrecommendations />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardrecommendations />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardrecommendations />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardrecommendations />
+          </BooksCurrentlyReadingSectionArrowSection>
           </BooksCurrentlyReadingSection>
         </BooksCurrentlyReading>
 
@@ -165,12 +176,24 @@ function App() {
             </Typography>
           </BooksCurrentlyReadingText>
           <BooksCurrentlyReadingSection>
+          <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardtopics />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardtopics />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardtopics />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardtopics />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardtopics />
+            </BooksCurrentlyReadingSectionArrowSection>
+            <BooksCurrentlyReadingSectionArrowSection>
             <Organismscardtopics />
+            </BooksCurrentlyReadingSectionArrowSection>
           </BooksCurrentlyReadingSection>
         </BooksCurrentlyReading>
 
@@ -192,9 +215,9 @@ function App() {
           </BooksCurrentlyReadingSection>
         </BooksCurrentlyReading>
 
-     
-
-      <CardCollection/>
+        </HeaderContainer>
+        <Moleculeslist1/>
+        <Atomsiconsmaths/>
    </>
   );
 }

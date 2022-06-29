@@ -13,7 +13,7 @@ import Atomsiconsalltopics from "./Atomsiconsalltopics";
 import Atomsiconsauthors from "./Atomsiconsauthors";
 import Atomsiconsrecenttitles from "./Atomsiconsrecenttitles";
 import Atomsiconspopular from "./Atomsiconspopular";
-export default function Organismsalltopics(props) {
+export default function Organismsalltopicsv1(props) {
   const { overrides, ...rest } = props;
   return (
     <View
@@ -22,7 +22,7 @@ export default function Organismsalltopics(props) {
       position="relative"
       padding="0px 0px 0px 0px"
       {...rest}
-      {...getOverrideProps(overrides, "Organismsalltopics")}
+      {...getOverrideProps(overrides, "Organismsalltopicsv1")}
     >
       <View
         padding="0px 0px 0px 0px"
@@ -122,6 +122,7 @@ export default function Organismsalltopics(props) {
             direction="column"
             width="220px"
             padding="0px 0px 0px 0px"
+            
             {...getOverrideProps(overrides, "molecules/list11464284")}
           ></Moleculeslist1>
           <Moleculeslist1
@@ -133,6 +134,14 @@ export default function Organismsalltopics(props) {
             direction="column"
             width="220px"
             padding="0px 0px 0px 0px"
+            overrides={{"Mathametics":{children:"Social Science"},
+            "Algebra & linear algebra":{children:"History"},
+            "Calculus":{children: "Geography, maps & atlas"},
+            "Statistics & Logistics":{children: "Civics & economics"},
+            "Trignometry":{children:"Psychology"}
+            
+          }}
+          
             {...getOverrideProps(overrides, "molecules/list11464326")}
           ></Moleculeslist1>
           <Moleculeslist1
@@ -144,6 +153,12 @@ export default function Organismsalltopics(props) {
             direction="column"
             width="220px"
             padding="0px 0px 0px 0px"
+            overrides={{"Mathametics":{children:"Others"},
+            "Algebra & linear algebra":{children:"Computer & Internet"},
+            "Calculus":{children: "Development"},
+            "Statistics & Logistics":{children: "Novels"},
+            "Trignometry":{children:"Politics"}
+          }}
             {...getOverrideProps(overrides, "molecules/list11505462")}
           ></Moleculeslist1>
         </View>
@@ -165,6 +180,12 @@ export default function Organismsalltopics(props) {
             direction="column"
             width="220px"
             padding="0px 0px 0px 0px"
+            overrides={{"Mathametics":{children:"Lifestyle"},
+            "Algebra & linear algebra":{children:"Art & crafts"},
+            "Calculus":{children: "Fashion & beauty"},
+            "Statistics & Logistics":{children: "Hotel management"},
+            "Trignometry":{children:"Travel & photography"}
+          }}
             {...getOverrideProps(overrides, "molecules/list11505444")}
           ></Moleculeslist1>
           <Moleculeslist1
@@ -175,6 +196,12 @@ export default function Organismsalltopics(props) {
             left="0px"
             direction="column"
             width="220px"
+            overrides={{"Mathametics":{children:"Exam Prepration"},
+            "Algebra & linear algebra":{children:"Defence"},
+            "Calculus":{children: "Engineering entrance"},
+            "Statistics & Logistics":{children: "Medical Entrance"},
+            "Trignometry":{children:"Exam by UPSC"}
+          }}
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "molecules/list11505463")}
           ></Moleculeslist1>
@@ -187,6 +214,11 @@ export default function Organismsalltopics(props) {
             direction="column"
             width="220px"
             padding="0px 0px 0px 0px"
+            overrides={{"Mathametics":{children:"Communication skills"},
+            "Algebra & linear algebra":{children:"Aptitude"},
+            "Calculus":{children: "Vocabulary"},
+            "Statistics & Logistics":{children: "Language & linguistics"},
+            "Trignometry":{children:"Writing"}}}
             {...getOverrideProps(overrides, "molecules/list11464298")}
           ></Moleculeslist1>
         </View>
@@ -208,6 +240,12 @@ export default function Organismsalltopics(props) {
             direction="column"
             width="220px"
             padding="0px 0px 0px 0px"
+            overrides={{"Mathametics":{children:"Science"},
+            "Algebra & linear algebra":{children:"Biology"},
+            "Calculus":{children: "Chemistry"},
+            "Statistics & Logistics":{children: "Medical science"},
+            "Trignometry":{children:"Travel & photography"}
+          }}
             {...getOverrideProps(overrides, "molecules/list11505381")}
           ></Moleculeslist1>
           <Moleculeslist1
