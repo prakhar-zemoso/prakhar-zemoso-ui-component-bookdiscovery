@@ -1,6 +1,6 @@
 {
   "name": "ui-component-bookdiscovery-42",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": false,
   "babel": {
     "presets": [
